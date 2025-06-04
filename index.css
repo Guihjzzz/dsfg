@@ -1,947 +1,425 @@
-:root {
-    --icon-scale: 1;
-
-    /* ESQUEMA DE CORES AZUL FUTURISTA (TEMA ESCURO) */
-    --primary-blue: #00a1ff;         /* Azul ciano vibrante para destaques */
-    --primary-blue-hover: #007acc;   /* Azul um pouco mais escuro para hover */
-    --primary-blue-active: #005c99;  /* Azul ainda mais escuro para active */
-    
-    --background-dark: #1a1d24;      /* Fundo principal escuro, quase preto */
-    --background-elements: #252a33;  /* Fundo para elementos como fieldsets, modais */
-    --background-highlight: #303642; /* Fundo para itens ativos ou hover em listas */
-
-    --text-color-light: #e0e0e0;     /* Cor de texto principal (claro) */
-    --text-color-medium: #a0a0a0;    /* Cor de texto secundária (cinza claro) */
-    --text-color-dark: #121212;      /* Cor de texto escura (para fundos claros, se houver) */
-
-    --border-color-light: #404858;   /* Cor de borda sutil */
-    --border-color-strong: var(--primary-blue); /* Borda de destaque */
-
-    --success-green: #28a745;        /* Verde para sucesso */
-    --error-red: #e53e3e;            /* Vermelho para erro */
-    --warning-orange: #dd6b20;       /* Laranja para aviso */
-
-    --focus-ring-color: rgba(0, 161, 255, 0.4); /* Sombra para foco, usando o azul primárioEntendido! A estética atual, como mostrada na imagem, é bastante básica e não ref */
-
-    --font-primary: 'Catamaran', 'Trebuchet MS', sans-serif;
-    --font-monospace: monospace;
-
-    --transition-speed: 0.2s;
-    --border-radius-small: 4px;
-    --border-radius-medium: 8px;
-    --lete o visual "futurista e elegante" que você deseja.
-
-Vamos aplicar as mudanças no `index.cssborder-radius-large: 12px;
-}
-
-body {
-    color: var(--text-color-light);
-    background-color: var(--background-dark);
-    font-family: var(--font-primary);
-    line-height: 1.5; /* Aumentado para melhor legibilidade em temas escuros */
-` para começar a transformar esse visual. Vou focar em um tema escuro com detalhes em azul, melhorando o espaçamento, a tipografia (usando a Catamaran que já está configurada) e a aparência dos formulários.    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased; /* Melhora a renderização da fonte */
-    -moz-osx-font-smoothing: grayscale;
-}
-
-main {
+/* RESET BÁSICO E CONFIGURAÇÕES GLOBAIS */
+*, *::before, *::after {
     box-sizing: border-box;
-    text-align: center;
-    scroll-behavior: smooth;
-    background-color: var(--background-elements);
-
-
-**Importante:**
-*   Este será um **primeiro rascunho** do novo CSS. O design visual é iterativo.
-*   As cores e estilos são sugestões. Podemos ajustá-los depois.
-*       border: 1px solid var(--border-color-light);
-    border-radius: var(--border-radius-large);
-    width: 95vw; 
-    max-width: 1400px; 
-    height: 90vh;
-    margin: 2.5vh auto; 
-    padding:Os ícones (Material Symbols) e a fonte Catamaran já estão linkados no HTML, então o CSS irá utilizá-los.
-*   As imagens de preview de textura (`texturePreviewImageCont`) ainda serão geradas pelo JavaScript 25px;
-    position: relative; 
-    overflow: auto;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5); /* Sombra mais pronunciada para "flutuar" */
-}
-
-h1 {
-    margin: 1. O CSS pode estilizar o contêiner, mas o conteúdo visual delas (com base nas cores do formulário) virá do JS.
-
-Aqui está a nova versão do `index.css` visando um estilo mais futurista e elegante:
-
-```css
-:root {
-    --icon-scale: 1;
-
-    /* ESQUEMA DE CORES AZUL FUTURISTA (TEMA ESCURO) */
-    --primary-blue: #00a10px 0 30px 0; 
-    color: var(--primary-blue);
-    font-weightff;         /* Azul ciano vibrante para destaques e interações */
-    --primary-blue-hover: #007acc;   /* Azul um pouco mais escuro para hover */
-    --primary-blue-active: #0: 700; 
-    letter-spacing: 1.5px; /* Mais espaçamento para um look moderno */
-    text-transform: uppercase; /* Opcional: para um toque mais estilizado */
-    font-size: 2.2em; /* Tamanho maior */
-}
-
-#responsiveWidthWrapper {
-    width:05c99;  /* Azul ainda mais escuro para active */
-    
-    --background-dark: #12181f;      /* Fundo principal muito escuro, quase preto azulado */
-    --background-elements: #1a2029;  /* Fundo para elementos como fieldsets, ab 70%; 
-    margin: auto;
-}
-@media (max-width:1300px){ #responsiveWidthWrapper{width:80%} }
-@media (max-width:1048px){ #responsiveWidthWrapper{width:90%} }
-@media (max-width:748px){as inativas */
-    --background-highlight: #2c3645; /* Fundo para itens ativos ou hover em listas/abas ativas */
-
-    --text-color-light: #e0e6f
-    main { padding: 15px; width: 100vw; height: 100vh; margin:0; border-radius: 0; border: none;}
-    #responsiveWidthWrapper{width:95%}
-    h1 { font-size: 1.8em; margin-bottom: 200;     /* Cor de texto principal (claro) */
-    --text-color-medium: #90a0b5;    /* Cor de texto secundária (cinza azulado claro) */
-    --text-colorpx; }
-}
-@media (max-width:450px){
-    :root{--icon-scale:1;font-size:.8em}
-    main{padding:10px}
--dark: #12181f;      /* Cor de texto escura (para fundos claros, se houver) */
-
-    --border-color-light: #303d4f;   /* Cor    fieldset{padding:10px}
-}
-
-input[type=file]:invalid {
-    color: var(--error-red);
-    outline: 2px solid var(--error-red); /* Outline mais sutil */
-     de borda sutil */
-    --border-color-strong: var(--primary-blue); /* Borda de destaque */
-
-    --success-green: #38a169;        /* Verde para sucesso */
-    --error-red: #e53e3e;            /* Vermelho para erro */
-    --warning-orangebox-shadow: 0 0 0 0.2rem rgba(229, 62, 62, 0.25);
-    contain: paint;
-}
-
-/* Estilos para Upload de Arquivos */
-#structureFileInputCont input[type=file]~div {
-    box-sizing: border-box;
-: #dd6b20;       /* Laranja para aviso */
-
-    --focus-ring-color: rgba(0, 161, 255, 0.4); /* Sombra para foco */
-
-    --font-primary: 'Catamaran', 'Trebuchet MS', sans-serif;
-    --font-monospace: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-
-    --transition    text-align: center;
-    border: 2px dashed var(--primary-blue); 
-    border-radius: var(--border-radius-medium);
-    width: 80%; /* Um pouco mais largo */
-    margin: 10px auto; /* Mais margem */
-    padding: 20px; /* Mais padding */
-    font-weight: 500;
-    background-color: var(--background-highlight); /* Fundo levemente destacado */
-    transition: background-color var(--transition-speed), border-color var(--transition-speed);
-}
-#structureFileInputCont input[type=file]~div:hover {
-    background-color-speed: 0.2s;
-    --border-radius-small: 4px;
-    --border-radius-medium: 6px;
-    --border-radius-large: 8px;
-
-: var(--border-color-light);
-    border-color: var(--primary-blue-hover);
-}
-
-#structureFileInputCont fieldset:first-of-type input[type=file]~div {
-    border: 2px solid var(--primary-blue); 
-}
-
-/* Lógica de exibição de inputs (mantida)    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.12);
-    --shadow-lg: 0 - esta parte é JS, não CSS */
-
-#structureFileInputCont fieldset label~span {
-    margin-top: 10px;
-    font-weight: 500;
-    display: block;
-    padding: 8px;
-    border-radius: var(--border-radius-small);
-}
-#structureFileInputCont fieldset label~span[id$=success i] { color: var(--text-color-light); background-color: 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
-}
-
-body {
-    color: var(--text-color-light);
-    background-color: var(--background-dark);
-    font-family: var(--font-primary);
-    line-height:  var(--success-green); }
-#structureFileInputCont fieldset label~span[id$=error i] { color: var(--text-color-light); background-color: var(--error-red); }
-
-#descriptionLinksCont {
-    color: var(--text-color-medium);
-    font-size: .9em;
-    font-weight: 500;
-    margin-top: 5px;
-}
-
-file1.5; /* Aumentado para melhor legibilidade */
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+}
+
+:root {
+    --icon-scale: 1;
+
+    /* TEMA ESCURO FUTURISTA COM AZUL */
+    --primary-blue: #00a1ff;
+    --primary-blue-hover: #007acc;
+    --primary-blue-active: #005c99;
+    
+    --background-main: #0f172a; /* Azul muito escuro para o fundo principal */
+    --background-content: #1e293b; /* Azul acinzentado escuro para áreas de conteúdo */
+    --background-elements: #334155; /* Azul acinzentado médio para inputs, botões inativos */
+    --background-highlight: #475569; /* Para hover em elementos */
+
+    --text-light: #f1f5f9; /* Quase branco */
+    --text-medium: #94a3b8; /* Cinza azulado claro */
+    --text-dark: #0f172a;   /* Para contraste em fundos claros, se houver */
+
+    --border-light: #334155; 
+    --border-strong: var(--primary-blue);
+
+    --success-color: #22c55e;
+    --error-color: #ef4444;
+    --warning-color: #f97316;
+
+    --focus-ring: rgba(0, 161, 255, 0.5);
+
+    --font-sans: 'Catamaran', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+
+    --radius-sm: 3px;
+    --radius-md: 6px;
+    --radius-lg: 10px;
+    --transition: all 0.2s ease-in-out;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--background-main);
+    color: var(--text-light);
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 main {
-    box-sizing: border-box;
-    text-align: center;
-    scroll-behavior: smooth;
-    background-color: var(--background-input-table { margin: 10px 0; } /* Mais margem vertical */
-
-/* Fieldsets expansíveis */
-fieldset.expandable {
-    border: 1px solid var(--border-color-light);
-    border-radius: var(--border-radius-medium);
-    background-color: transparent; /* Sem fundo extra, herda da main */
-    margin-bottom: 15px;
-    transition: grid-elements);
-    border: 1px solid var(--border-color-light);
-    border-radius: var(--border-radius-large);
-    width: calc(100vw - 40px); /* Ocupa mais da largura, com margens */
-    max-width: 1280px; 
-    height: calc(100vh - 40px); /* Ocupa mais da altura, com margens */
-    margin: 20px auto;
-    padding: 20px 30px; /* Mais padding horizontal */
-    position: relative;
+    background-color: var(--background-content);
+    width: 90vw;
+    max-width: 1200px;
+    height: 90vh;
+    margin: 5vh auto;
+    padding: 25px;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     overflow: auto;
-    box-shadow: var(--shadow-lg-template-rows .35s ease-in-out; /* Transição mais suave */
-    display: grid;
-    grid-template-rows: 0fr;
-}
-fieldset.expandable:has(legend input:checked) { grid-template-rows: 1fr; }
-fieldset.expandable>:not(legend) { overflow: hidden; padding: 15px; } /* Padding dentro do conteúdo */
-fieldset.expandable>legend {);
+    text-align: center;
 }
 
 h1 {
-    margin: 0 0 30px 0; /* Espaçamento abaixo do H1 */
     color: var(--primary-blue);
-    font-weight: 5
-    contain: layout;
-    background-color: transparent; 
-    padding: 10px 15px;
-    cursor: pointer;
-    width: 100%; /* Ocupar toda a largura */
-    display: flex; /* Para alinhar a seta */
-    align-items: center;
-    color: var(--text-color-light);
-    font-weight: 500;
-    border-bottom:00; /* Peso mais leve para elegância */
-    font-size: 2.25em; /* Maior */
-    letter-spacing: 0.5px;
-    border-bottom: 1px solid var(--border-color-light);
-    padding-bottom: 15px;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-weight: 600;
 }
 
 #responsiveWidthWrapper {
-    width: 100%; /* Wrapper ocupa toda a largura da main */
-    max-width: 900px; /* Limita a largura do conteúdo do formulário */
-    margin: auto;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
 }
 
-form { text-align: left; }
-
+/* FORMULÁRIOS */
 fieldset {
-    border: 1px solid var(--border 1px solid transparent; /* Para transição */
-}
-fieldset.expandable:has(legend input:checked)>legend {
-    border-bottom-color: var(--border-color-light);
-}
-fieldset.-color-light);
-    border-radius: var(--border-radius-medium);
+    background-color: rgba(255, 255, 255, 0.03); /* Leve destaque */
+    border: 1px solid var(--border-light);
     padding: 20px;
-    margin-bottom: 25px;
-    background-color: transparent; /* Sem fundo extra, herda da main */
+    margin-bottom: 20px;
+    border-radius: var(--radius-md);
 }
 legend {
-    padding: 0 10px;expandable>legend>label { padding-left: 25px; position: relative; width:100%;} /* Ajuste para a seta */
-fieldset.expandable>legend>label>input { display: none; }
-
-fieldset.expandable>legend::before { /* Seta indicadora */
-    content: "";
-    border: solid var(--primary-blue);
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 3px;
-    transform: rotate(-45deg);
-    -
-    font-weight: 500;
-    color: var(--text-color-medium);
+    color: var(--primary-blue);
+    font-weight: 600;
     font-size: 1.1em;
+    padding: 0 10px;
+    margin-left: -10px; /* Ajuste visual */
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-medium);
+    font-size: 0.95em;
+}
+label span { /* O texto do label em si */
+    color: var(--text-light);
 }
 
-input[type=file]:invalid {
-    outline: 2pxwebkit-transform: rotate(-45deg);
-    transition: transform var(--transition-speed) ease-in-out;
-    position: absolute;
-    left: 15px; /* Posição da seta */
-    top: 50%;
-    margin-top: -5px; /* Centraliza verticalmente */
-}
-fieldset.expandable:has(legend input:checked)>legend::before {
-    transform: rotate(45deg solid var(--error-red);
-    border-color: var(--error-red) !important; /* Forçar borda */
-}
-
-/* Upload de Arquivos */
-#structureFileInputCont input[type=file]~div {
-    text-align: center;
-    border: 2px dashed var(--primary-blue);
-    border-radius: var(--border-radius-medium);
-    margin: 10px auto;
-    padding:);
-    -webkit-transform: rotate(45deg);
-    margin-top: -2px; /* Ajuste para seta para baixo */
-}
-
-
-label { display: block; margin-bottom: 8px; color: var(--text-color-medium); }
-input, select { font-family: var(--font-monospace); }
-
-details {
-    border: 1px solid var(--border-color-light);
-    border-radius: 20px; /* Mais padding */
-    font-weight: 400;
-    background-color: rgba(0, 161, 255, 0.05); /* Fundo azulado muito sutil */
-    transition: background-color var(--transition-speed), border-color var(--transition-speed);
-}
-#structureFileInputCont input[type=file]~div:hover {
-    background-color: rgba(0 var(--border-radius-medium);
-    padding: 10px; 
-    font-size: .9em; /* Um pouco maior */
-    background-color: var(--background-highlight);
-    margin-bottom: 10px;
-}
-summary { 
-    padding: 5px 0; /* Mais padding vertical */
-    font-size: 1rem; 
-    font-weight: 500; , 161, 255, 0.1);
-    border-color: var(--primary-blue-hover);
-}
-#structureFileInputCont fieldset:first-of-type input[type=file]~div {
-    border-style: solid; /* Borda sólida para o primeiro */
-}
-#structureFileInputCont input[type=file]~div p:first-child { font-size: 1.2
-    cursor: pointer; 
-    color: var(--primary-blue); 
-    list-style: none; /* Remove marcador padrão */
-    display: flex;
-    align-items: center;
-}
-summary::before { /* Seta para details/summary */
-    content: '▸';
-    color: var(--primary-blue);
-    margin-right: 8px;
-    transition: transform var(--transition-speed);
-}
-em; margin-bottom: 5px; color: var(--text-color-light); }
-#structureFileInputCont input[type=file]~div p:last-child { font-size: 0.85em; color: var(--text-color-medium); }
-
-/* Mensagens de status */
-#structureFileInputCont fieldset label~span { margin-top: 10px; font-weight: 500; display: block; padding: 8px; border-radius: var(--border-radius-small); }
-#structuredetails[open] > summary::before {
-    transform: rotate(90deg);
-}
-summary:hover { color: var(--primary-blue-hover); }
-
-
-/* Estilos para botões e inputs com o novo esquema azul */
-input, button, textarea, select, .buttonlike {
-    accent-color: var(--primary-blue);
-    color: var(--text-color-light);
-    cursor: pointer;
-    background-color: var(--background-highlight); 
-    border: 1px solid var(--border-color-light);
-    borderFileInputCont fieldset label~span[id$=success i] { color: #fff; background-color: var(--success-green); }
-#structureFileInputCont fieldset label~span[id$=error i], #structureFileInputCont fieldset label~span[id$=world_error i] { color: #fff; background-color: var(--error-red); }
-
-/* Fieldsets expansíveis */
-fieldset.expandable {
-    border: 1px solid var(--border-color-light);
-    margin-top: 15px;
-}
-fieldset.expand-radius: var(--border-radius-small);
-    padding: 10px 15px; 
-    font-family: inherit;
-    font-size: 0.95rem;
-    transition: background-color var(--transition-speed), border-color var(--transition-speed), box-shadow var(--transition-speed);
-}
-
-*:focus-visible {
-    outline: 2px solid var(--primary-blue);
-    outline-offset: 2px;
-    box-shadow: 0 0 0 4px var(--focusable>legend {
-    cursor: pointer;
-    padding: 10px 15px 10px 35px; /* Espaço para o ícone */
-    position: relative;
-    display: block; /* Para ocupar a largura toda */
-    background-color: rgba(255,255,255,0.03);
-    border-radius: var(--border-radius-medium) var(--border-radius-medium)-ring-color);
-}
-
-input:focus, button:focus, textarea:focus, select:focus, .buttonlike:focus {
-    outline: none; /* Será substituído pelo focus-visible */
-    border-color: var(--primary-blue);
-    box-shadow: 0 0 8px var(--focus-ring-color); /* Sombra de foco mais suave */
-}
-
-input[type=checkbox] { 
-    accent-color: var 0 0;
-    margin: -20px -20px 15px -20px; /* Para alinhar com o topo do fieldset */
-}
-fieldset.expandable>legend:hover { background-color: rgba(255,255,255,0.05); }
-fieldset.expandable>legend>label { padding-left: 0; } /* Label dentro da legenda já tem padding */
-fieldset.expandable>(--primary-blue);
-    width: 20px; height: 20px; /* Tamanho padrão */
-    vertical-align: middle;
-    margin-right: 5px;
-    /* Usarlegend>label>input { display: none; }
-fieldset.expandable>legend:before { /* Ícone de seta */
-    content: "▸"; /* Seta para a direita */
-    font-family: var(--font-monospace o checkbox padrão do navegador para melhor acessibilidade e consistência, removendo o customizado */
-    -webkit-appearance: checkbox;
-    -moz-appearance: checkbox;
-    appearance: checkbox;
-    background: transparent; /* Remover estilos customizados anteriores */
-}
-input[type=checkbox]:checked{ background: var(--primary-blue); /* Para melhor renderização da seta */
-    color: var(--primary-blue);
-    font-size: 1.3em;
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%) rotate(0deg);
-    transition: transform var(--transition-speed);
-}
-fieldset.expandable:has(legend input:checked)>legend:before { transform: translateY(-50%) rotate(90deg); } /* Seta para baixo */
-
-
-label { display: block; margin); }
-input[type=checkbox]:after{ content: none; } /* Remover pseudo-elemento */
-
-input[type=number], input[type=text], textarea {
-    cursor: text;
-    background-color: var(--background-dark); 
-    border: 1px solid var(--border-color-light);
--bottom: 8px; color: var(--text-color-medium); font-size: 0.95em; }
-label span { color: var(--text-color-light); } /* Span dentro do label (o texto principal) */
-
-input, button, textarea, select, .buttonlike {
-    accent-color: var    padding: 10px 12px; 
-    color: var(--text-color-light(--primary-blue);
-    color: var(--text-color-light);
-    background-color: var(--background-highlight);
-    border: 1px solid var(--border-color-light);
-    border-radius: var(--border-radius-small);
+input[type="text"],
+input[type="number"],
+input[type="color"],
+input[type="file"],
+textarea,
+select {
+    display: block;
+    width: 100%;
     padding: 10px 12px;
-); /* Texto claro para inputs */
+    margin-bottom: 15px;
+    background-color: var(--background-elements);
+    border: 1px solid var(--border-light);
+    color: var(--text-light);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-mono); /* Monospace para inputs */
+    transition: var(--transition);
 }
-input[type=number]:hover, input[type=text]:hover, textarea:hover {
-    border-color: var(--primary-blue-hover);
-}
-
-input[type=color] {
-    cursor: pointer;
-    background-color: var(--background-dark);
-    border    font-family: var(--font-primary);
-    font-size: 1em;
-    transition: background-color var(--transition-speed), border-color var(--transition-speed), box-shadow var(--transition-speed);
-}
-
-*:focus-visible { /* Estilo de foco global */
-    outline: 2px: 1px solid var(--border-color-light);
-    border-radius: var(--border-radius-small);
-    padding: 2px; 
-    min-height: 38px; /* Alinhado com outros inputs */
-    min-width: 50px;
-}
-
-input[type=file solid var(--primary-blue);
-    outline-offset: 2px;
-    box-shadow: 0 0 0 3px var(--focus-ring-color);
-}
-input:focus, button:focus]::-webkit-file-upload-button,
-input[type=file]::-ms-browse,
-input[type=file]::file-selector-button {
-    color: var(--text-color-light);
-    background-color:, textarea:focus, select:focus, .buttonlike:focus {
-    outline: none; /* Remove outline var(--primary-blue);
-    border: none; /* Sem borda extra */
-    border-radius: var(--border-radius-small);
-    padding: 8px 12px;
-    font-family padrão se já temos box-shadow */
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="color"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
     border-color: var(--primary-blue);
-    box-shadow: 0 0 0 3px var(--focus-ring-color);
+    box-shadow: 0 0 0 3px var(--focus-ring);
 }
-
-/* Inputs de Texto e: inherit;
-    transition: background-color var(--transition-speed);
-    margin-right: 10px;
+input[type="color"] {
+    padding: 5px; /* Inputs de cor geralmente precisam de menos padding */
+    height: 42px; /* Para alinhar com outros inputs */
 }
-input[type=file]:hover::-webkit-file-upload-button,
-input[ Número */
-input[type=number], input[type=text], textarea {
-    background-color: var(--background-dark); /* Fundo mais escuro para inputs de texto */
-    border: 1px solidtype=file]:hover::-ms-browse,
-input[type=file]:hover::file-selector-button {
-    background-color: var(--primary-blue-hover);
+input[type="file"] {
+    padding: 0; /* O estilo do botão interno cuidará disso */
 }
-
-a.buttonlike {
- var(--border-color-light);
-    width: calc(100% - 26px); /* Ajust    color: var(--primary-blue);
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: var(--background-ar largura considerando padding */
-}
-textarea { min-height: 80px; resize: vertical; }
-
-/*highlight);
-    border: 1px solid var(--border-color-light);
-    border-radius: var(--border-radius-small);
-}
-a.buttonlike:hover {
-    background-color: Botões */
-button, .buttonlike {
-    background-color: var(--primary-blue);
-    color: #fff; /* Texto branco para botões azuis */
-    border-color: var(--primary-blue);
-     var(--border-color-light);
-    color: var(--primary-blue-hover);
-    text-decoration:font-weight: 500;
-    cursor: pointer;
-}
-button:hover, .buttonlike:hover {
-    background-color: var(--primary-blue-hover);
-    border-color: var none;
-}
-
-button:not(:disabled):not(.packInfoButton):hover,
-select:not(:disabled):hover,
-.buttonlike:not(:disabled):not(.packInfoButton):hover {
-    background-(--primary-blue-hover);
-}
-button:active, .buttonlike:active {
-    background-color: var(--primary-blue-active);
-    border-color: var(--primary-blue-active);color: var(--primary-blue-hover); 
-    border-color: var(--primary-blue-hover);
-    
-}
-button:disabled, .buttonlike:disabled {
-    background-color: var(--border-color-lightcolor: var(--text-color-light); /* Garante texto claro no hover */
-}
-
-button:disabled,);
-    border-color: var(--border-color-light);
-    color: var(--text-color select:disabled, .buttonlike:disabled {
-    cursor: not-allowed;
-    background-color: var(--background-highlight); 
-    border-color: var(--border-color-light);
-    color: var(--text-color-medium);
-    cursor: not-allowed;
-}
-
-/* Input de Cor */
-input[type=color] {-medium); /* Cinza para texto desabilitado */
-    opacity: 0.6;
-}
-
-    padding: 2px;
-    min-height: 38px; /* Alinhar alturainput[type=file]:disabled::-webkit-file-upload-button,
-input[type=file]:disabled com outros inputs */
-    min-width: 50px;
-    background-color: var(--background-highlight);::-ms-browse,
-input[type=file]:disabled::file-selector-button {
-    cursor:
-    border: 1px solid var(--border-color-light);
-}
-
-/* Input de Arquivo (not-allowed; background-color: var(--text-color-medium); opacity: 0.6;
-}
-
-buttonbotão interno) */
 input[type=file]::-webkit-file-upload-button,
-input[type=file]::-:not(.packInfoButton):not(:disabled):active,
-select:not(:disabled):active,
-.buttonlike:not(.packInfoButton):not(:disabled):active {
-    background-color: var(--primary-blue-ms-browse,
 input[type=file]::file-selector-button {
     background-color: var(--primary-blue);
-    color: #fff;
+    color: var(--text-dark); /* Texto escuro no botão azul */
     border: none;
-    padding: 8pxactive); 
-    border-color: var(--primary-blue-active);
-}
-
-.resetButton {
-     12px;
-    border-radius: var(--border-radius-small);
-    margin-right: 10px;
+    padding: 10px 15px;
+    border-radius: var(--radius-sm);
     cursor: pointer;
-    transition: background-color var(--transition-speed);position: absolute;
-    top: 15px; 
-    right: 15px;
-    background-color: transparent;
-    border: 1px solid var(--warning-orange);
-    color: var
+    transition: var(--transition);
+    margin-right: 10px;
 }
 input[type=file]::-webkit-file-upload-button:hover,
 input[type=file]::file-selector-button:hover {
     background-color: var(--primary-blue-hover);
-(--warning-orange);
+}
+
+/* BOTÕES */
+button, .buttonlike {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-blue);
+    color: var(--text-dark); /* Texto escuro para melhor contraste no azul */
+    border: none;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: var(--transition);
+    text-align: center;
+}
+button:hover, .buttonlike:hover {
+    background-color: var(--primary-blue-hover);
+    box-shadow: 0 2px 10px rgba(0, 161, 255, 0.3);
+}
+button:active, .buttonlike:active {
+    background-color: var(--primary-blue-active);
+}
+button:disabled, .buttonlike:disabled {
+    background-color: var(--background-elements) !important;
+    color: var(--text-medium) !important;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+#generatePackButton {
+    width: 70%;
+    margin: 20px auto;
+    font-size: 1.2em;
+    padding: 12px 20px;
+}
+
+.packInfoButton.failed, .packInfoButton.reportIssue {
+    background-color: var(--error-color) !important;
+    color: var(--text-light) !important;
+}
+.packInfoButton.failed:hover, .packInfoButton.reportIssue:hover {
+    background-color: darkred !important; /* Um vermelho mais escuro no hover */
+}
+
+
+/* ABAS */
+.multiTabCont {
+    display: flex;
+    margin-bottom: 0; /* As abas se conectam ao fieldset */
+    border-bottom: 1px solid var(--primary-blue);
+}
+.multiTabCont > label.buttonlike { /* Aba em si */
+    flex-grow: 1;
+    background-color: var(--background-elements);
+    color: var(--text-medium);
+    border: 1px solid var(--border-light);
+    border-bottom: none; /* Remove borda inferior da aba */
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+    padding: 12px 15px;
+    margin-right: 2px;
+    position: relative;
+    bottom: -1px; /* Para sobrepor a borda do fieldset */
+    font-weight: 500;
+}
+.multiTabCont > input[type=radio]:checked + label.buttonlike { /* Aba ativa */
+    background-color: var(--background-content); /* Mesmo fundo do fieldset ativo */
+    color: var(--primary-blue);
+    border-color: var(--primary-blue) var(--primary-blue) transparent var(--primary-blue);
+    font-weight: 600;
+}
+.multiTabCont > input[type=radio] { display: none; }
+.multiTabCont > fieldset {
+    order: 1; /* Garante que o fieldset venha depois das labels */
+    width: 100%;
+    margin-top: 0;
+    border-top-left-radius: 0; /* Remove borda superior se a primeira aba estiver ativa */
+    border-top: 1px solid var(--primary-blue); /* Borda azul no topo do fieldset */
+}
+.multiTabCont > input[type=radio]:not(:checked) + label.buttonlike + fieldset {
+    display: none;
+}
+
+
+/* FIELDSETS EXPANSÍVEIS */
+fieldset.expandable > legend {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px 0; /* Padding vertical na legenda */
+    color: var(--text-light);
+}
+fieldset.expandable > legend::before { /* Seta */
+    content: "▸";
+    color: var(--primary-blue);
+    margin-right: 10px;
+    font-size: 1.1em;
+    transition: transform var(--transition);
+    display: inline-block; /* Para transform funcionar */
+}
+fieldset.expandable > legend > label { margin-bottom: 0; } /* Remover margem da label interna */
+fieldset.expandable > legend > label > input { display: none; }
+fieldset.expandable:has(legend input:checked) > legend::before {
+    transform: rotate(90deg);
+}
+fieldset.expandable > div { /* Conteúdo do expansível */
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    padding: 0 15px; /* Padding horizontal, vertical será animado */
+}
+fieldset.expandable:has(legend input:checked) > div {
+    max-height: 1000px; /* Um valor alto para permitir expansão */
+    padding: 15px;
+}
+
+/* CHECKBOX */
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    vertical-align: middle;
+    accent-color: var(--primary-blue);
+    /* Revertendo para o checkbox padrão do navegador, que herda melhor os estilos do tema */
+    appearance: checkbox;
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    background-color: transparent; /* Remove estilos anteriores */
+}
+input[type="checkbox"]::after { content: none; } /* Remove pseudo-elemento do estilo antigo */
+
+/* UPLOAD DE ARQUIVOS (DROPZONE) */
+#structureFileInputCont input[type=file]~div {
+    padding: 30px;
+    margin: 15px auto;
+    border: 2px dashed var(--primary-blue);
+    background-color: rgba(0, 161, 255, 0.05);
+    border-radius: var(--radius-md);
+}
+#structureFileInputCont input[type=file]~div p:first-child {
+    font-size: 1.3em; color: var(--text-light); margin-bottom: 5px;
+}
+#structureFileInputCont input[type=file]~div p:last-child {
+    font-size: 0.9em; color: var(--text-medium);
+}
+
+/* MENSAGENS DE STATUS E ERRO NOS UPLOADS */
+#structureFileInputCont fieldset label~span {
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: var(--radius-sm);
+    color: var(--text-light);
+    font-weight: 500;
+}
+#structureFileInputCont fieldset label~span[id$="Success"] { background-color: var(--success-color); }
+#structureFileInputCont fieldset label~span[id$="Error"] { background-color: var(--error-color); }
+
+/* Preview de Textura (settings.textures) */
+#texturePreviewImageCont img {
+    border: 1px solid var(--border-light);
+    margin: 5px;
+    background-color: var(--background-main); /* Fundo consistente */
+    image-rendering: pixelated;
+}
+
+/* Botão Reset */
+.resetButton {
+    background-color: transparent;
+    color: var(--warning-color);
+    border: 1px solid var(--warning-color);
+    padding: 6px 12px;
     font-size: 0.9em;
-    padding: 6px 10px;
+    float: right;
+    margin-top: -40px; /* Alinhar com a legenda, ajuste conforme necessário */
+    position: relative; /* Para z-index funcionar sobre outros elementos se necessário */
+    z-index: 5;
 }
 .resetButton:hover {
-    background-color: var(--warning-orange);
+    background-color: var(--warning-color);
+    color: var(--text-dark);
 }
 
-/* Checkbox customizado */
-input[type=checkbox] { 
-    -webkit-appearance: none    color: var(--background-dark);
-    border-color: var(--warning-orange);
+/* LOADER */
+.loader {
+    width: 40px;
+    height: 40px;
+    margin: 20px auto;
+    border: 4px solid var(--background-elements);
+    border-top-color: var(--primary-blue);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    to { transform: rotate(360deg); }
 }
 
-/* Abas */
-.multiTabCont { flex-wrap: wrap; justify-content: flex-start; display: flex; margin; -moz-appearance: none; appearance: none;
-    width: 20px; height: 20px;
-    border: 1px solid var(--border-color-light);
-    border-radius: var-bottom: 0; border-bottom: 1px solid var(--primary-blue); }
-.multi(--border-radius-small);
-    background-color: var(--background-highlight);
-    vertical-align: middleTabCont>input[type=radio][name^=configTabs] { display: none; }
-.multiTabCont>label { 
-    text-align: center;
-    flex-grow: 0; /* Não cres;
-    position: relative;
-    cursor: pointer;
-    margin-right: 5px;
-}
-inputcer para preencher */
-    margin: 0 2px -1px 0; /* Sobrepor a borda inferior[type=checkbox]:checked {
-    background-color: var(--primary-blue);
-    border-color */
-    padding: 12px 20px; 
-    border: 1px solid var(--border-: var(--primary-blue);
-}
-input[type=checkbox]:checked::after {
-    content: "color-light);
-    border-bottom: none;
-    border-radius: var(--border-radius-✔";
-    color: #fff;
-    font-size: 14px;
+/* SELETOR DE IDIOMA */
+#languageSelectorCont {
     position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -5medium) var(--border-radius-medium) 0 0; 
-    background-color: var(--background-highlight0%);
-    line-height: 1;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+#languageSelectorButton {
+    width: calc(30px * var(--icon-scale));
+    height: calc(30px * var(--icon-scale));
+    background-color: var(--primary-blue);
+    transition: var(--transition);
+    -webkit-mask: url(./assets/translate_icon.svg) 50% no-repeat; /* Verifique o caminho deste asset */
+    mask: url(./assets/translate_icon.svg) 50% no-repeat;
+    cursor: pointer;
+}
+#languageSelectorCont:hover > #languageSelectorButton {
+    background-color: var(--primary-blue-hover);
+    transform: scale(1.1);
+}
+#languageSelector {
+    opacity: 0;
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    cursor: pointer;
 }
 
-/* Abas */
-.multiTabCont { display);
-    color: var(--text-color-medium);
-    position: relative;
-    font-weight: flex; flex-wrap: wrap; margin-bottom: 0; }
-.multiTabCont>input[type=: 500;
+/* Links nos Termos de Uso, etc. */
+a {
+    color: var(--primary-blue);
+    text-decoration: none;
 }
-.multiTabCont>input[type=radio][name^=configTabs]:checked+label {
-    background-color: var(--background-elements); /* Mesmo fundo do fieldset */
-radio] { display: none; }
-.multiTabCont>label.buttonlike { /* Abas */
-    text    border-color: var(--primary-blue) var(--primary-blue) transparent var(--primary-blue);
-    color-align: center;
-    flex-grow: 1; /* Para ocupar espaço igual */
-    margin: 0 -1px -1px 0; /* Sobrepor bordas */
-    padding: 12px 1: var(--primary-blue);
-    z-index: 1; /* Para ficar sobre a borda do fieldset */
+a:hover {
+    text-decoration: underline;
+    color: var(--primary-blue-hover);
 }
-.multiTabCont>fieldset {
-    order: 1;
-    width:5px;
-    border: 1px solid var(--border-color-light);
-    border-bottom 100%;
-    border-top-left-radius: 0; 
-    border-top-right: 1px solid var(--border-color-light); /* Borda inferior visível para abas inativas */
-    -radius: 0;
-    margin-top: -1px; /* Para conectar com a borda daborder-radius: var(--border-radius-medium) var(--border-radius-medium) 0 0;
-    background-color: var(--background-elements);
-    color: var(--text-color-medium); aba */
-    border-color: var(--primary-blue); /* Borda forte quando aba ativa */
-    padding
-    font-weight: 400;
-    position: relative;
-    z-index: 1;: 20px; /* Padding aumentado */
-}
+#termsOfUseNotice { color: var(--text-medium); font-size: 0.9em; margin-top: 15px; }
 
-#dropFileNotice { 
+/* Drop File Notice */
+#dropFileNotice {
+    background-color: rgba(15, 23, 42, 0.95); /* Quase opaco */
+    color: var(--primary-blue);
+    /* ... demais estilos mantidos */
     box-sizing: border-box;
     text-align: center;
-    background: rgba(26, 29, 3
-}
-.multiTabCont>input[type=radio]:checked+label.buttonlike { /* Aba ativa */
-    background-color: var(--background-highlight); /* Fundo da main, para parecer contínuo */
-    6, 0.95); /* Fundo escuro translúcido */
     justify-content: center;
-border-bottom-color: var(--background-highlight); /* Esconde a borda inferior da aba ativa */
-    color    align-items: center;
+    align-items: center;
     width: 100vw;
     height: 100vh;
     padding: 10px;
-    font-size: 1.75em: var(--primary-blue);
-    font-weight: 500;
-    z-index:;
+    font-size: 1.75em;
     display: flex;
     position: fixed;
     top: 0;
     left: 0;
-    color: var(--primary-blue);
-    border: 3px dashed var(--primary- 2; /* Para ficar sobre as bordas das outras */
-}
-.multiTabCont>input[type=radioblue);
-    z-index: 1000;
-}
-#dropFileNotice h1 {]:not(:checked)+label.buttonlike:hover {
-    background-color: var(--background-highlight);
-     color: var(--primary-blue); }
-
-/* Botão Gerar Pacote e Botões de Info */
-#color: var(--text-color-light);
-}
-.multiTabCont>fieldset { /* Conteúdo da abageneratePackButton, .packInfoButton {
-    border-width: 2px;
-    border-radius: */
-    order: 1;
-    width: 100%;
-    border-top-left-radius: var(--border-radius-medium);
-    width: 60%; /* Mais contido */
-    margin: 2 0;
-    border-top-right-radius: 0;
-    margin-top: 0; /* Remove5px auto; 
-    padding: 12px 20px;
-    font-size: margem superior do fieldset da aba */
-    background-color: var(--background-highlight); /* Fundo um 1.2em; /* Um pouco menor, mais elegante */
-    font-weight: 600; pouco diferente para o conteúdo da aba */
-}
-.multiTabCont>input[type=radio]:not(:checked)+
-    display: block;
-    color: var(--text-color-light);
-    background-color: var(--primarylabel+fieldset { display: none; }
-
-
-/* Botão Gerar Pacote e Info */
-#generatePackButton,-blue);
-    border-color: var(--primary-blue);
-    text-transform: uppercase; /* .packInfoButton {
-    width: 100%; /* Ocupa largura total do container */
-     Opcional */
-    letter-spacing: 0.5px;
-}
-#generatePackButton:max-width: 400px; /* Limita largura */
-    margin: 25px auto hover, .packInfoButton.completed:hover {
-    background-color: var(--primary-blue-hover15px auto;
-    padding: 12px 20px;
-    font-size:);
-    border-color: var(--primary-blue-hover);
-    box-shadow: 0  1.2em;
-}
-.packInfoButton { /* Gradiente animado para sucesso */
-    --0 15px rgba(0, 161, 255, 0.5); /*bg-col-1: var(--primary-blue);
-    --bg-col-2: #00c Brilho futurista */
-}
-#generatePackButton:disabled {
-    background-color: var(--border-color-light);
-    border-color: var(--border-color-light);
-    box-shadow6ff; /* Um azul mais claro para o gradiente */
-    background-image: repeating-linear-gradient(135deg, var(--bg-col-1) 0, var(--bg-col-1) 1: none;
-    color: var(--text-color-medium);
+    z-index: 9999;
 }
 
-.packInfoButton {
-    --bg-col-1: var(--primary-blue-hover); 
-    --bg-col-2: var(--primary5px, var(--bg-col-2) 15px, var(--bg-col-2) 30px);
-    animation: moveButtonBackground 2s linear infinite;
-    background-size:-blue);
-    /* Gradiente mais sutil ou removido para elegância */
-    background-image: 200% 200% !important;
+/* File Input Table (interno, o componente cuida de si, mas podemos ajustar a borda principal) */
+file-input-table #main { /* Acessando o #main dentro do shadow DOM do file-input-table */
+    border: 1px solid var(--border-light) !important; /* Tentar sobrescrever a borda ridge */
+    background-color: var(--background-elements) !important;
 }
-@keyframes moveButtonBackground{ 0%{ linear-gradient(150deg, var(--bg-col-1), var(--bg-col-2));
-background-position:0% 50%} 50%{background-position:100% 50%} }
-.packInfoButton.failed, .packInfoButton.reportIssue {
-    --bg-col-1100%{background-position:0% 50%} }
-
-.packInfoButton.failed, .packInfoButton.reportIssue {
-    --bg-col-1: var(--error-red);
-    --bg: var(--error-red); 
-    --bg-col-2: #a52a2a; /*-col-2: #ff6b6b;
-    animation: none; /* Remove animação para fal Vermelho escuro */
-    background-image: linear-gradient(150deg, var(--bg-col-1), var(--bg-col-2));
-}
-
-#termsOfUseNotice {
-    text-ha */
-}
-
-/* Termos de Uso */
-#termsOfUseNotice {
-    text-align: centeralign: center;
-    display: block;
-    margin-top: 20px; 
-    font-size: 0.85em;
-    color: var(--text-color-medium);
-}
-; display: block; margin-top: 20px; font-size: 0.85em; color#termsOfUseNotice a { color: var(--primary-blue); text-decoration: none; }
-#: var(--text-color-medium);
-}
-#termsOfUseNotice a { color: var(--primarytermsOfUseNotice a:hover { text-decoration: underline; color: var(--primary-blue-hover); }
-
-/*-blue); text-decoration: none; }
-#termsOfUseNotice a:hover { text-decoration: underline Imagens e Canvas de Preview */
-img:not(#languageSelectorButton), canvas {
-    border: 1; color: var(--primary-blue-hover); }
-
-/* Preview de Textura */
-#texturePreviewCont imgpx solid var(--border-color-light); 
-    width: auto; /* Para não forçar 400px {
-    border: 1px solid var(--border-color-light);
-    background-color: var(--background */
-    max-width: 100%; /* Responsivo */
-    display: inline-block;
-    -dark); /* Fundo escuro para imagens de preview */
-}
-
-/* Loader */
-.loader {
-    background-color: var(--background-dark); /* Fundo escuro para imagens */
-    border-radius: var(----c: no-repeat linear-gradient(var(--primary-blue) 0 0);
-    /* ... (animaborder-radius-small);
-}
-
-.previewCont {
-    text-align: center;
-    paddingção do loader mantida) ... */
-    aspect-ratio:1;background:var(--c) 0% : 15px;
-    background-color: var(--background-elements); 
-    border: 1px solid50%,var(--c) 50% 50%,var(--c) 100% 50%;background-size:20% 100%;width:45px;margin: var(--border-color-light);
-    border-radius: var(--border-radius-medium);
-    10px auto auto;animation:1s linear infinite l1
-}
-@keyframes l1{0%{background-sizemargin-top: 20px;
-}
-.previewMessage {
-    padding: 30px; /* Mais padding */
-    background-color: var(--background-highlight);
-    color: var(--text-color-light:20% 100%,20% 100%,20% 100);
-}
-
-/* Seletor de Idioma */
-#languageSelectorCont {
-    position: absolute;%}33%{background-size:20% 10%,20% 100%,20% 100%}50%{background-size:20% 100%,20% 
-    top: 15px;
-    right: 15px;
-    z-index:10%,20% 100%}66%{background-size:20% 100%,20% 100%,20% 10%}to{background-size:2 10;
-}
-#languageSelectorButton {
-    width: calc(28px * var(--0% 100%,20% 100%,20% 100%}}
+/* Para que o seletor acima funcione, o file-input-table precisaria expor partes ou usar variáveis CSS */
+/* Se não funcionar, o estilo do file-input-table é mais isolado no seu Shadow DOM */
 
 
-/* Seletor de Idioma */
-#languageSelectorCont { position: absolute; top: 20pxicon-scale)); /* Ícone um pouco maior */
-    height: calc(28px * var(--icon-scale));
-    background-color: var(--primary-blue); 
-    /* mask-image: url(assets; right: 30px; z-index: 10; }
-#languageSelectorButton {
-    width: calc(28px * var(--icon-scale)); height: calc(28px * var(--icon-scale/translate_icon_futuristic.svg);  ATENÇÃO: Novo ícone seria ideal */
-}
-#languageSelectorCont:hover>#languageSelectorButton { transform: scale(1.1); background-color: var(--primary-));
-    background-color: var(--primary-blue);
-    /* ... mask mantida ... */
-    -webkit-blue-hover); }
-
-/* Loader (animação de carregamento) */
-.loader {
-    --c: no-repeat linear-gradient(var(--primary-blue) 0 0); 
-    background:mask:url(assets/translate_icon.svg) 50% no-repeat;mask:url(assets/translate_icon.svg) 50% no-repeat
-}
-#languageSelectorCont:hover> var(--c) 0% 50%, var(--c) 50% 50%, var(--c) 100% 50%;
-    /* Animação de "pulso" mais suave#languageSelectorButton { transform: scale(1.1); background-color: var(--primary-blue-hover */
-    animation: 1.2s ease-in-out infinite l1-pulse;
-}
-@keyframes l); }
-#languageSelector { /* Select sobreposto ao ícone */
-    opacity: 0; width: 101-pulse { /* Animação alternativa para o loader */
-  0%, 100% { background-0%; height: 100%; position: absolute; top: 0; left: 0; cursorsize: 20% 100%,20% 100%,20% 1: pointer;
+/* Garantir que os ícones Material Symbols herdem a cor do texto se não especificado */
+.material-symbols {
+    color: inherit;
+    vertical-align: middle;
 }
 
-
-/* Media queries para ajustes finos */
-@media (max-width:7400%; }
-  33% { background-size: 20% 40%,20% 18px){
-    main { width: 100vw; height: 100vh; margin: 00%,20% 40%; }
-  66% { background-size: 200; border-radius: 0; border: none; padding: 15px; }
-    h% 100%,20% 40%,20% 100%; }
-}
-
-
-1 { font-size: 1.8em; margin-bottom: 20px; padding-bottom/* Configurações de Textura Específicas */
-#texturePreviewCont img { 
-    border:: 10px; }
-    #responsiveWidthWrapper{width:100%}
-    fieldset { padding: 15px; }
-    .multiTabCont>label.buttonlike { padding: 10 1px solid var(--primary-blue); /* Borda azul no preview */
-    background-color: var(--backgroundpx 8px; font-size: 0.9em; }
-}
-
-@media (max-width:-dark); 
-}
-
-/* Adicionando um pouco mais de "futurismo" a alguns elementos */
-450px){
-    main { padding: 10px; }
-    h1 { font-input[type=text], input[type=number], textarea, select {
-    box-shadow: inset 0 1size: 1.6em; }
-    button, .buttonlike, input, select, textarea { fontpx 3px rgba(0,0,0,0.3); /* Sombra interna sutil */
-}-size: 0.95em; padding: 8px 10px; }
-    #generatePack
-
-/* Webkit scrollbar para um toque final (opcional, não funciona em todos navegadores) */
-::-webkit-scrollbarButton, .packInfoButton { font-size: 1.1em; }
-    .multiTabCont>label {
-    width: 8px;
-    height: 8px;
-}
-::-webkit-scrollbar.buttonlike { font-size: 0.85em; }
-}
-
-/* Reset Button específico */
-.reset-track {
-    background: var(--background-elements);
-}
-::-webkit-scrollbar-thumb {
-    background:Button {
-    background-color: var(--background-highlight);
-    color: var(--warning-orange);
- var(--primary-blue);
-    border-radius: var(--border-radius-small);
-}
-::-webkit    border: 1px solid var(--warning-orange);
-    font-size: 0.8em;
-    -scrollbar-thumb:hover {
-    background: var(--primary-blue-hover);
-}
+/* Ajustes finos em espaçamentos e tamanhos de fonte para elegância */
+body { font-size: 16px; } /* Base */
+@media (max-width: 768px) { body { font-size: 15px; } main { padding: 15px; height: auto; min-height: 90vh;} }
+@media (max-width: 480px) { body { font-size: 14px; } h1 { font-size: 1.8em;} }
