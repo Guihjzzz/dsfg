@@ -4,55 +4,67 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title data-translate="app_name">HoloLab</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="Ferramenta de construção para Minecraft Bedrock, similar a Litematica ou Schematica. Crie pacotes de recursos para MCBE para exibir hologramas de esquemáticos. Facilite a construção no MCPE!" data-translate="app_description_meta">
-    <meta name="keywords" content="hololab, litematica bedrock" data-translate="app_keywords_meta">
+    <!-- ATENÇÃO: O conteúdo da meta description e keywords será definido pelos arquivos de tradução -->
+    <meta name="description" content="" data-translate="app_description_meta">
+    <meta name="keywords" content="" data-translate="app_keywords_meta">
     
-    <meta property="og:url" content="https://seusite.com/hololab"> <!-- ATENÇÃO: Altere para a URL real do seu site -->
+    <meta property="og:url" content="URL_DO_SEU_SITE_AQUI"> <!-- ATENÇÃO: Substitua pela URL real do HoloLab -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="HoloLab" data-translate="app_name_og">
-    <meta property="og:description" content="Ferramenta de construção para Minecraft Bedrock, similar a Litematica ou Schematica. Crie pacotes de recursos para MCBE para exibir hologramas de esquemáticos. Facilite a construção no MCPE!" data-translate="app_description_og">
+    <meta property="og:description" content="" data-translate="app_description_og"> <!-- Será preenchido pela tradução -->
     <meta property="og:image" content="https://github.com/Holo-Lab/holo/blob/main/1748951676116.png?raw=true">
     <meta property="og:image:width" content="720">
     <meta property="og:image:height" content="210">
     <meta property="og:image" content="https://github.com/Holo-Lab/holo/blob/main/ChatGPT%20Image%203%20de%20jun.%20de%202025,%2008_40_34.png?raw=true">
     <meta property="og:image:width" content="192">
     <meta property="og:image:height" content="192">
-    <!-- Removida a terceira og:image duplicada para limpeza -->
 
     <script type="application/ld+json">{
         "@context":"https://schema.org",
         "@type":"WebApplication",
         "name":"HoloLab",
-        "url":"https://seusite.com/hololab", <!-- ATENÇÃO: Altere para a URL real do seu site -->
-        "description":"Ferramenta de construção para Minecraft Bedrock, similar a Litematica ou Schematica. Crie pacotes de recursos para MCBE para exibir hologramas de esquemáticos. Facilite a construção no MCPE!",
+        "url":"URL_DO_SEU_SITE_AQUI", <!-- ATENÇÃO: Substitua -->
+        "description":"Descrição do HoloLab aqui, para ser traduzida via JS se necessário ou definida no JSON-LD",
         "applicationCategory":"UtilitiesApplication",
         "browserRequirements":"Requires JavaScript",
         "operatingSystem":"All",
-        "keywords":"hololab, litematica bedrock",
+        "keywords":"hololab, minecraft, bedrock, schematics", <!-- Adapte as palavras-chave -->
         "image":"https://github.com/Holo-Lab/holo/blob/main/ChatGPT%20Image%203%20de%20jun.%20de%202025,%2008_40_34.png?raw=true",
-        "author":{ <!-- ATENÇÃO: Personalize as informações do autor -->
+        "author":{ 
             "@type":"Person",
-            "name":"Seu Nome/Nome do Time",
-            "url":"https://github.com/seu_usuario_ou_org"
+            "name":"NOME_DO_AUTOR_OU_TIME", <!-- ATENÇÃO: Substitua -->
+            "url":"URL_DO_AUTOR_OU_TIME" <!-- ATENÇÃO: Substitua -->
         },
-        "hasPart":[ <!-- ATENÇÃO: Personalize ou remova estes links para sua Wiki, FAQ, etc. -->
-            {"@type":"WebPage","url":"https://seusite.com/hololab/wiki","name":"HoloLab Wiki"},
-            {"@type":"WebPage","url":"https://seusite.com/hololab/tutorial","name":"HoloLab Tutorial"},
-            {"@type":"WebPage","url":"https://seusite.com/hololab/faq","name":"HoloLab FAQ"}
+        "hasPart":[ 
+            {"@type":"WebPage","url":"URL_DA_SUA_WIKI","name":"HoloLab Wiki"}, <!-- ATENÇÃO: Substitua ou remova -->
+            {"@type":"WebPage","url":"URL_DO_SEU_TUTORIAL","name":"HoloLab Tutorial"}, <!-- ATENÇÃO: Substitua ou remova -->
+            {"@type":"WebPage","url":"URL_DO_SEU_FAQ","name":"HoloLab FAQ"} <!-- ATENÇÃO: Substitua ou remova -->
         ],
         "offers":{"@type":"Offer","price":"0"}
     }</script>
-    <meta name="google-site-verification" content="SEU_CODIGO_GOOGLE_AQUI"> <!-- ATENÇÃO: Remova ou substitua pelo seu -->
+    <meta name="google-site-verification" content="SEU_CODIGO_GOOGLE_AQUI"> <!-- ATENÇÃO: Remova ou substitua -->
     
-    <link rel="manifest" href="manifest.webmanifest"> <!-- ATENÇÃO: Crie seu manifest.webmanifest e altere o link -->
+    <link rel="manifest" href="manifest.webmanifest"> <!-- ATENÇÃO: Crie seu manifest.webmanifest -->
     <link rel="icon" sizes="48x48" href="https://github.com/Holo-Lab/holo/blob/main/ChatGPT%20Image%203%20de%20jun.%20de%202025,%2008_40_34.png?raw=true">
     <link rel="icon" sizes="192x192" href="https://github.com/Holo-Lab/holo/blob/main/ChatGPT%20Image%203%20de%20jun.%20de%202025,%2008_40_34.png?raw=true">
     
+    <!-- Seus arquivos CSS -->
     <link rel="stylesheet" href="./code_files/css"> <!-- Fonte Catamaran -->
     <link rel="stylesheet" href="./code_files/MaterialSymbols.css">
-    <link rel="stylesheet" href="./code_files/index.css">
+    <link rel="stylesheet" href="./code_files/index.css"> <!-- Este será o principal para o novo visual -->
     
-    <script type="importmap">{"imports":{"nbtify":"https://esm.sh/nbtify@2.2.0?exports=read","mcbe-leveldb-reader":"https://esm.sh/mcbe-leveldb-reader@1.0.3?exports=extractStructureFilesFromMcworld","tga-js":"https://esm.sh/tga-js@1.1.1","potpack":"https://esm.sh/potpack@2.0.0","deepmerge":"https://esm.sh/deepmerge@4.3.1","@supabase/supabase-js":"https://esm.sh/@supabase/supabase-js@2?exports=createClient","three":"https://esm.sh/three@0.147.0?exports=DirectionalLight,AmbientLight,CubeTextureLoader","@bridge-editor/model-viewer":"https://esm.sh/@bridge-editor/model-viewer@0.8.1?exports=StandaloneModelViewer","@zip.js/zip.js":"https://esm.sh/@zip.js/zip.js@2.7.60?exports=ZipWriter,TextReader,BlobWriter,BlobReader,ZipReader","strip-json-comments":"https://esm.sh/strip-json-comments@5.0.1"}}</script>
+    <script type="importmap">{"imports":{
+        "nbtify":"https://esm.sh/nbtify@2.2.0?exports=read",
+        "mcbe-leveldb-reader":"https://esm.sh/mcbe-leveldb-reader@1.0.3?exports=extractStructureFilesFromMcworld",
+        "tga-js":"https://esm.sh/tga-js@1.1.1",
+        "potpack":"https://esm.sh/potpack@2.0.0",
+        "deepmerge":"https://esm.sh/deepmerge@4.3.1",
+        "@supabase/supabase-js":"https://esm.sh/@supabase/supabase-js@2?exports=createClient",
+        "three":"https://esm.sh/three@0.147.0?exports=DirectionalLight,AmbientLight,CubeTextureLoader",
+        "@bridge-editor/model-viewer":"https://esm.sh/@bridge-editor/model-viewer@0.8.1?exports=StandaloneModelViewer",
+        "@zip.js/zip.js":"https://esm.sh/@zip.js/zip.js@2.7.60?exports=ZipWriter,TextReader,BlobWriter,BlobReader,ZipReader",
+        "strip-json-comments":"https://esm.sh/strip-json-comments@5.0.1"
+    }}</script>
     <script src="./code_files/index.js.baixados" type="module"></script>
 </head>
 <body>
@@ -65,136 +77,131 @@
             <div class="multiTabCont" id="structureFileInputCont">
                 <input type="radio" checked="checked" name="configTabs2" form="" id="structureFilesTab"> <label for="structureFilesTab" class="buttonlike" data-translate="structure_files.heading">Arquivos de Estrutura</label>
                 <fieldset>
-                    <legend data-translate="structure_files.upload">Fazer upload de arquivos de estrutura (<code>*.mcstructure</code>)</legend>
+                    <legend data-translate="structure_files.upload_legend">Fazer upload de arquivos de estrutura (<code>*.mcstructure</code>)</legend>
                     <label><input type="file" accept=".mcstructure" multiple="multiple" form="" autocomplete="off" id="structureFilesInput">
                         <div class="buttonlike">
                             <p data-translate="upload.button">Carregar Arquivo(s)</p>
-                            <p data-translate="upload.button.drop_notice">Ou arraste os arquivos aqui</p>
+                            <p data-translate="upload.button_drop_notice">Ou arraste os arquivos aqui</p>
                         </div>
-                    </label> <span class="hidden" id="notStructureFileError" data-translate="structure_files.error">Por favor, envie apenas arquivos <code>.mcstructure</code>.</span>
+                    </label> <span class="hidden" id="notStructureFileError" data-translate="structure_files.error_mcstructure_only">Por favor, envie apenas arquivos <code>.mcstructure</code>.</span>
                 </fieldset>
                 <input type="radio" name="configTabs2" form="" id="extractFromWorldTab"> <label for="extractFromWorldTab" class="buttonlike" data-translate="extract_from_world.heading">Extrair do Mundo</label>
                 <fieldset>
-                    <legend data-translate="extract_from_world.upload">Fazer upload do arquivo do mundo (<code>*.mcworld</code>, <code>*.zip</code>)</legend>
+                    <legend data-translate="extract_from_world.upload_legend">Fazer upload do arquivo do mundo (<code>*.mcworld</code>, <code>*.zip</code>)</legend>
                     <label><input type="file" accept=".mcworld,.zip" form="" autocomplete="off" id="worldFileInput">
                         <div class="buttonlike">
-                            <p data-translate="upload.button.world">Carregar Arquivo do Mundo</p>
-                            <p data-translate="upload.button.drop_notice">Ou arraste o arquivo aqui</p>
+                            <p data-translate="upload.button_world">Carregar Arquivo do Mundo</p>
+                            <p data-translate="upload.button_drop_notice">Ou arraste o arquivo aqui</p>
                         </div>
-                    </label> <span class="hidden" id="worldExtractionMessage" data-translate="extract_from_world.extracting">Extraindo estruturas do mundo...</span>
-                    <span class="hidden" id="worldExtractionSuccess" data-translate="extract_from_world.success" data-translation-sub-count="{COUNT}">Extraído(s) {COUNT} estrutura(s) com sucesso!</span>
-                    <span class="hidden" id="worldExtractionError" data-translate="extract_from_world.error">Nenhuma estrutura salva encontrada!</span>
-                    <span class="hidden" id="worldExtractionWorldError" data-translate="extract_from_world.world_error" data-translation-sub-error="{ERROR}">Arquivo de mundo inválido! {ERROR}</span>
+                    </label> <span class="hidden" id="worldExtractionMessage" data-translate="extract_from_world.extracting_message">Extraindo estruturas do mundo...</span>
+                    <span class="hidden" id="worldExtractionSuccess" data-translate="extract_from_world.success_message" data-translation-sub-count="{COUNT}">Extraído(s) {COUNT} estrutura(s) com sucesso!</span>
+                    <span class="hidden" id="worldExtractionError" data-translate="extract_from_world.error_no_structures">Nenhuma estrutura salva encontrada!</span>
+                    <span class="hidden" id="worldExtractionWorldError" data-translate="extract_from_world.error_invalid_world" data-translation-sub-error="{ERROR}">Arquivo de mundo inválido! {ERROR}</span>
                 </fieldset>
                 <input type="radio" name="configTabs2" form="" id="updatePackTab"> <label for="updatePackTab" class="buttonlike" data-translate="update_pack.heading">Atualizar Pacote</label>
                 <fieldset>
-                    <legend data-translate="update_pack.upload">Fazer upload do pacote antigo Structura/HoloLab (<code>*.mcpack</code>)</legend> <!-- Alterado para HoloLab -->
+                    <legend data-translate="update_pack.upload_legend">Fazer upload do pacote antigo Structura/HoloLab (<code>*.mcpack</code>)</legend>
                     <label><input type="file" accept=".mcpack" form="" autocomplete="off" id="oldPackInput">
                         <div class="buttonlike">
-                            <p data-translate="upload.button.old_pack">Carregar Pacote Antigo</p>
-                            <p data-translate="upload.button.drop_notice">Ou arraste o arquivo aqui</p>
+                            <p data-translate="upload.button_old_pack">Carregar Pacote Antigo</p>
+                            <p data-translate="upload.button_drop_notice">Ou arraste o arquivo aqui</p>
                         </div>
-                    </label> <span class="hidden" id="oldPackExtractionMessage" data-translate="update_pack.extracting">Extraindo arquivos de estrutura...</span>
-                    <span class="hidden" id="oldPackExtractionSuccess" data-translate="update_pack.success">Arquivos de estrutura antigos encontrados com sucesso!</span>
-                    <span class="hidden" id="oldPackExtractionError" data-translate="update_pack.error">O pacote não é um pacote Structura/HoloLab! <small>(Nenhum arquivo de estrutura foi encontrado.)</small></span> <!-- Alterado para HoloLab -->
+                    </label> <span class="hidden" id="oldPackExtractionMessage" data-translate="update_pack.extracting_message">Extraindo arquivos de estrutura...</span>
+                    <span class="hidden" id="oldPackExtractionSuccess" data-translate="update_pack.success_message">Arquivos de estrutura antigos encontrados com sucesso!</span>
+                    <span class="hidden" id="oldPackExtractionError" data-translate="update_pack.error_not_hololab_pack">O pacote não é um pacote Structura/HoloLab! <small>(Nenhum arquivo de estrutura foi encontrado.)</small></span>
                 </fieldset>
             </div>
-            <file-input-table hide-file-extensions="" file-text-count="{COUNT} arquivo(s) selecionado(s)" data-translate-file-text-count="file_input_table.count" empty-text="Nenhum arquivo selecionado" data-translate-empty-text="file_input_table.empty" remove-all-text="Remover todos" data-translate-remove-all-text="file_input_table.remove_all">
-                <!-- Template do file-input-table (interno) -->
+            <file-input-table hide-file-extensions="" 
+                file-text-count="{COUNT} arquivo(s) selecionado(s)" data-translate-file-text-count="file_input_table.count" 
+                empty-text="Nenhum arquivo selecionado" data-translate-empty-text="file_input_table.empty" 
+                remove-all-text="Remover todos" data-translate-remove-all-text="file_input_table.remove_all">
                 <input type="file" accept=".mcstructure" multiple required name="structureFiles" id="structureFilesList">
             </file-input-table>
             <div class="multiTabCont">
-                <input type="radio" checked="checked" name="configTabs" form="" id="settingsTab"> <label for="settingsTab" class="buttonlike" data-translate="settings.heading">Configurações</label>
+                <input type="radio" checked="checked" name="configTabs" form="" id="settingsTab"> <label for="settingsTab" class="buttonlike" data-translate="settings.tab_heading">Configurações</label>
                 <fieldset>
-                    <legend data-translate="settings.heading">Configurações</legend>
-                    <label><span data-translate="settings.ghost_block_scale">Escala do bloco fantasma:</span> <input type="number" min="70" max="100" step="1" value="95" name="scale">%</label>
+                    <legend data-translate="settings.fieldset_legend">Configurações</legend>
+                    <!-- Restante das Configurações com data-translate -->
+                    <label><span data-translate="settings.ghost_block_scale_label">Escala do bloco fantasma:</span> <input type="number" min="70" max="100" step="1" value="95" name="scale">%</label>
                     <fieldset class="expandable textureSettings">
-                        <legend><label><span data-translate="settings.textures">Texturas</span><input type="checkbox"></label></legend>
+                        <legend><label><span data-translate="settings.textures_legend">Texturas</span><input type="checkbox"></label></legend>
                         <div>
                             <div>
-                                <label><span data-translate="settings.textures.tint.color">Tintura da sobreposição:</span> <input type="color" value="#579EFA" name="tintColor"></label> 
-                                <label><span data-translate="settings.textures.tint.opacity">Opacidade da tintura:</span> <input type="number" min="1" max="100" value="20" name="tintOpacity">%</label> 
-                                <label><span data-translate="settings.textures.outline.width">Largura do contorno da textura:</span> <select name="textureOutlineWidth"><option value="0" data-translate="settings.textures.outline.width.no_outline">Nenhum</option><option value="0.125">0.125px</option><option value="0.25" selected="selected">0.25px</option><option value="0.5">0.5px</option><option value="1">1px</option></select></label> 
-                                <label><span data-translate="settings.textures.outline.color">Cor do contorno da textura:</span> <input type="color" value="#0000FF" name="textureOutlineColor"></label> 
-                                <label><span data-translate="settings.textures.outline.opacity">Opacidade do contorno da textura:</span> <input type="number" min="10" max="100" value="65" name="textureOutlineOpacity">%</label>
+                                <label><span data-translate="settings.textures_tint_color_label">Tintura da sobreposição:</span> <input type="color" value="#579EFA" name="tintColor"></label> 
+                                <label><span data-translate="settings.textures_tint_opacity_label">Opacidade da tintura:</span> <input type="number" min="1" max="100" value="20" name="tintOpacity">%</label> 
+                                <label><span data-translate="settings.textures_outline_width_label">Largura do contorno:</span> <select name="textureOutlineWidth"><option value="0" data-translate="settings.textures_outline_width_none">Nenhum</option><option value="0.125">0.125px</option><option value="0.25" selected="selected">0.25px</option><option value="0.5">0.5px</option><option value="1">1px</option></select></label> 
+                                <label><span data-translate="settings.textures_outline_color_label">Cor do contorno:</span> <input type="color" value="#0000FF" name="textureOutlineColor"></label> 
+                                <label><span data-translate="settings.textures_outline_opacity_label">Opacidade do contorno:</span> <input type="number" min="10" max="100" value="65" name="textureOutlineOpacity">%</label>
                             </div>
                             <div id="texturePreviewCont">
-                                <span data-translate="settings.textures.tint.toggleable_in_game">A tintura pode ser ligada/desligada no jogo</span>
-                                <div id="texturePreviewImageCont">
-                                    <!-- Imagens de preview de textura serão inseridas aqui pelo JS -->
-                                </div>
+                                <span data-translate="settings.textures_tint_toggleable_ingame">A tintura pode ser ligada/desligada no jogo</span>
+                                <div id="texturePreviewImageCont"></div>
                             </div>
                         </div>
                     </fieldset>
                     <fieldset class="expandable">
-                        <legend><label><span data-translate="settings.player_controls">Controles no Jogo (<a href="https://seusite.com/hololab/wiki/controles" target="_blank">Wiki</a>)</span><input type="checkbox"></label></legend> <!-- ATENÇÃO: Link da Wiki -->
-                        <div id="playerControlsInputCont">
-                            <!-- item-criteria-input para controles (gerados por JS) -->
-                        </div>
+                        <legend><label><span data-translate="settings.player_controls_legend">Controles no Jogo (<a href="URL_WIKI_CONTROLES" target="_blank" data-translate="settings.player_controls_wiki_link_text">Wiki</a>)</span><input type="checkbox"></label></legend> <!-- ATENÇÃO: URL da sua Wiki -->
+                        <div id="playerControlsInputCont"></div>
                     </fieldset>
                     <fieldset class="expandable">
-                        <legend><label><span data-translate="settings.features">Recursos</span><input type="checkbox"></label></legend>
+                        <legend><label><span data-translate="settings.features_legend">Recursos</span><input type="checkbox"></label></legend>
                         <div>
                             <table>
                                 <tbody>
-                                    <tr><td><label data-translate="settings.features.spawn_animation" for="c1">Animação de surgimento:</label></td><td><input type="checkbox" name="spawnAnimationEnabled" checked="checked" id="c1"></td></tr>
-                                    <tr><td><label data-translate="settings.features.player_controls" for="c2">Controles do jogador:</label></td><td><input type="checkbox" name="playerControlsEnabled" checked="checked" id="c2"></td></tr>
-                                    <tr><td><label data-translate="settings.features.material_list" for="c3">Lista de materiais:</label></td><td><input type="checkbox" name="materialListEnabled" checked="checked" id="c3"></td></tr>
-                                    <tr><td><label data-translate="settings.features.retexture_control_items" for="c4">Retexturizar itens de controle:</label></td><td><input type="checkbox" name="retextureControlItems" checked="checked" id="c4"></td></tr>
-                                    <tr><td><label data-translate="settings.features.rename_control_items" for="c5">Renomear itens de controle:</label></td><td><input type="checkbox" name="renameControlItems" checked="checked" id="c5"></td></tr>
+                                    <tr><td><label data-translate="settings.features_spawn_animation_label" for="c1">Animação de surgimento:</label></td><td><input type="checkbox" name="spawnAnimationEnabled" checked id="c1"></td></tr>
+                                    <tr><td><label data-translate="settings.features_player_controls_label" for="c2">Controles do jogador:</label></td><td><input type="checkbox" name="playerControlsEnabled" checked id="c2"></td></tr>
+                                    <tr><td><label data-translate="settings.features_material_list_label" for="c3">Lista de materiais:</label></td><td><input type="checkbox" name="materialListEnabled" checked id="c3"></td></tr>
+                                    <tr><td><label data-translate="settings.features_retexture_items_label" for="c4">Retexturizar itens de controle:</label></td><td><input type="checkbox" name="retextureControlItems" checked id="c4"></td></tr>
+                                    <tr><td><label data-translate="settings.features_rename_items_label" for="c5">Renomear itens de controle:</label></td><td><input type="checkbox" name="renameControlItems" checked id="c5"></td></tr>
                                 </tbody>
                             </table>
                         </div>
                     </fieldset>
-                    <label><span data-translate="settings.mini_size">Tamanho da mini visualização: </span><select name="miniSize"><option value="0.125" selected="selected" data-translate="settings.mini_size.small">Pequeno</option><option value="0.0625" data-translate="settings.mini_size.smaller">Menor</option><option value="0.03125" data-translate="settings.mini_size.tiny">Minúsculo</option><option value="0" data-translate="settings.mini_size.hidden">Oculto</option></select></label> 
-                    <label><span data-translate="settings.ignored_blocks">Blocos ignorados:</span> <input type="text" name="ignoredBlocks" placeholder="bloco_1 bloco_2 etc." data-translate-placeholder="settings.ignored_blocks.placeholder"></label>
+                    <label><span data-translate="settings.mini_size_label">Tamanho da mini visualização: </span><select name="miniSize"><option value="0.125" selected data-translate="settings.mini_size_small">Pequeno</option><option value="0.0625" data-translate="settings.mini_size_smaller">Menor</option><option value="0.03125" data-translate="settings.mini_size_tiny">Minúsculo</option><option value="0" data-translate="settings.mini_size_hidden">Oculto</option></select></label> 
+                    <label><span data-translate="settings.ignored_blocks_label">Blocos ignorados:</span> <input type="text" name="ignoredBlocks" data-translate-placeholder="settings.ignored_blocks_placeholder" placeholder="bloco_1 bloco_2 etc."></label>
                     <details>
-                        <summary data-translate="settings.advanced">Avançado</summary>
-                        <label><span data-translate="settings.initial_offset">Deslocamento inicial:</span> <input type="number" min="-999" max="999" step="1" value="0" placeholder="0" name="initialOffsetX"> / <input type="number" min="-999" max="999" step="1" value="0" placeholder="0" name="initialOffsetY"> / <input type="number" min="-999" max="999" step="1" value="0" placeholder="0" name="initialOffsetZ"></label> 
-                        <label><span data-translate="settings.backup_slot_count">Número de slots de backup:</span> <input type="number" min="0" max="30" step="1" value="10" name="backupSlotCount"></label> 
-                        <label><span data-translate="settings.control_item_texture_scale">Escala da textura do item de controle:</span> <input type="number" min="1" max="64" step="1" value="1" name="controlItemTextureScale"></label> 
-                        <label><span data-translate="settings.opacity_mode">Modo de opacidade:</span> <select name="opacityMode"><option value="multiple" selected="selected" data-translate="settings.opacity_mode.in_game_controls">Controles no jogo</option><option value="single" data-translate="settings.opacity_mode.fixed_opacity">Opção única</option></select></label> 
-                        <label class="hidden"><span data-translate="settings.opacity">Opacidade do holograma:</span> <input type="number" min="10" max="100" step="5" value="80" name="opacity">%</label>
+                        <summary data-translate="settings.advanced_summary">Avançado</summary>
+                        <label><span data-translate="settings.initial_offset_label">Deslocamento inicial:</span> <input type="number" min="-999" max="999" step="1" value="0" placeholder="0" name="initialOffsetX"> / <input type="number" min="-999" max="999" step="1" value="0" placeholder="0" name="initialOffsetY"> / <input type="number" min="-999" max="999" step="1" value="0" placeholder="0" name="initialOffsetZ"></label> 
+                        <label><span data-translate="settings.backup_slots_label">Slots de backup:</span> <input type="number" min="0" max="30" step="1" value="10" name="backupSlotCount"></label> 
+                        <label><span data-translate="settings.control_item_scale_label">Escala da textura do item de controle:</span> <input type="number" min="1" max="64" step="1" value="1" name="controlItemTextureScale"></label> 
+                        <label><span data-translate="settings.opacity_mode_label">Modo de opacidade:</span> <select name="opacityMode"><option value="multiple" selected data-translate="settings.opacity_mode_ingame">Controles no jogo</option><option value="single" data-translate="settings.opacity_mode_fixed">Opção única</option></select></label> 
+                        <label class="hidden"><span data-translate="settings.hologram_opacity_label">Opacidade do holograma:</span> <input type="number" min="10" max="100" step="5" value="80" name="opacity">%</label>
                     </details>
-                    <button type="button" class="resetButton" data-translate="reset" data-reset-translation="settings.reset">Restaurar</button>
+                    <button type="button" class="resetButton" data-translate="settings.reset_button" data-reset-translation="settings.reset_button_confirm">Restaurar</button>
                 </fieldset>
-                <input type="radio" name="configTabs" form="" id="metadataTab"> <label for="metadataTab" class="buttonlike" data-translate="metadata.heading">Metadados</label>
+                <input type="radio" name="configTabs" form="" id="metadataTab"> <label for="metadataTab" class="buttonlike" data-translate="metadata.tab_heading">Metadados</label>
                 <fieldset>
-                    <legend data-translate="metadata.heading">Metadados</legend>
-                    <label><span data-translate="metadata.pack_name">Nome do Pacote:</span> <code><input type="text" pattern="[^\/]*" name="packName" placeholder="holograma" data-translate-placeholder="metadata.pack_name.placeholder"></code></label> 
-                    <label><span data-translate="metadata.pack_icon">Ícone do Pacote (<code>*.png</code>):</span> <input type="file" accept=".png" name="packIcon"></label> 
-                    <label><span data-translate="metadata.structure_author">Autor da Estrutura:</span> <input type="text" placeholder="AmanteDeMinecraft123" name="author" data-translate-placeholder="metadata.structure_author.placeholder"></label> 
-                    <label><span data-translate="metadata.description">Descrição:</span><br><textarea placeholder="Esta é minha casa épica!" rows="4" cols="20" name="description" data-translate-placeholder="metadata.description.placeholder"></textarea></label>
+                    <legend data-translate="metadata.fieldset_legend">Metadados</legend>
+                    <label><span data-translate="metadata.pack_name_label">Nome do Pacote:</span> <code><input type="text" pattern="[^\/]*" name="packName" data-translate-placeholder="metadata.pack_name_placeholder" placeholder="holograma"></code></label> 
+                    <label><span data-translate="metadata.pack_icon_label">Ícone do Pacote (<code>*.png</code>):</span> <input type="file" accept=".png" name="packIcon"></label> 
+                    <label><span data-translate="metadata.author_label">Autor da Estrutura:</span> <input type="text" name="author" data-translate-placeholder="metadata.author_placeholder" placeholder="AmanteDeMinecraft123"></label> 
+                    <label><span data-translate="metadata.description_label">Descrição:</span><br><textarea rows="4" cols="20" name="description" data-translate-placeholder="metadata.description_placeholder" placeholder="Esta é minha casa épica!"></textarea></label>
                     <div id="descriptionLinksCont"></div>
-                    <label><span data-translate="metadata.compression_level">Nível de compressão:</span> <input type="number" min="0" max="9" step="1" value="5" name="compressionLevel"></label> 
-                    <button type="button" class="resetButton" data-translate="reset" data-reset-translation="metadata.reset">Restaurar</button>
+                    <label><span data-translate="metadata.compression_label">Nível de compressão:</span> <input type="number" min="0" max="9" step="1" value="5" name="compressionLevel"></label> 
+                    <button type="button" class="resetButton" data-translate="metadata.reset_button" data-reset-translation="metadata.reset_button_confirm">Restaurar</button>
                 </fieldset>
-                <input type="radio" name="configTabs" form="" id="resourcesTab"> <label for="resourcesTab" class="buttonlike" data-translate="resource_packs.heading">Pacotes de Recursos</label>
+                <input type="radio" name="configTabs" form="" id="resourcesTab"> <label for="resourcesTab" class="buttonlike" data-translate="resources.tab_heading">Pacotes de Recursos</label>
                 <fieldset>
-                    <legend data-translate="resource_packs.heading">Pacotes de Recursos</legend>
-                    <label><span data-translate="resource_packs.upload_local">Fazer upload de um pacote de recursos local:</span><br><input type="file" webkitdirectory="" name="localResourcePack"></label> 
-                    <button type="button" id="clearResourcePackCacheButton" data-translate="resource_packs.clear_cache" data-reset-translation="resource_packs.cache_reset">Limpar cache de pacotes de recursos</button> 
-                    <button type="button" class="resetButton" data-translate="reset" data-reset-translation="resource_packs.reset">Restaurar</button>
+                    <legend data-translate="resources.fieldset_legend">Pacotes de Recursos</legend>
+                    <label><span data-translate="resources.upload_local_label">Fazer upload de um pacote de recursos local:</span><br><input type="file" webkitdirectory="" name="localResourcePack"></label> 
+                    <button type="button" id="clearResourcePackCacheButton" data-translate="resources.clear_cache_button" data-reset-translation="resources.cache_reset_confirm">Limpar cache</button> 
+                    <button type="button" class="resetButton" data-translate="resources.reset_button" data-reset-translation="resources.reset_button_confirm">Restaurar</button>
                 </fieldset>
             </div>
-            <button name="submit" id="generatePackButton" data-translate="generate">Gerar Pacote</button> 
-            <small id="termsOfUseNotice" data-translate="terms_of_use_notice">Ao gerar um pacote com HoloLab, você concorda com os <a href="https://seusite.com/hololab/termos" target="_blank">Termos de Uso</a>. (É bem curto!)</small> <!-- ATENÇÃO: Link dos Termos de Uso -->
+            <button name="submit" id="generatePackButton" data-translate="generate_pack_button">Gerar Pacote</button> 
+            <small id="termsOfUseNotice" data-translate="terms_of_use_notice">Ao gerar um pacote com HoloLab, você concorda com os <a href="URL_DOS_SEUS_TERMOS_DE_USO" target="_blank" data-translate="terms_of_use_link_text">Termos de Uso</a>. (É bem curto!)</small> <!-- ATENÇÃO: URL dos seus Termos -->
         </fieldset>
     </form>
     <div id="completedPacksCont"></div>
-    <simple-logger id="log">
-        <!-- Template do simple-logger (interno) -->
-    </simple-logger>
+    <simple-logger id="log"></simple-logger>
     </div>
-    <div id="languageSelectorCont" title="Mudar idioma" data-translate-title="change_language">
+    <div id="languageSelectorCont" title="Mudar idioma" data-translate-title="language_selector_title">
         <div id="languageSelectorButton"></div>
-        <select id="languageSelector">
-            <!-- Opções de idioma serão inseridas aqui pelo JS -->
-        </select>
+        <select id="languageSelector"></select>
     </div>
 </main>
 <div id="dropFileNotice" class="hidden">
-    <h1 data-translate="upload.drop_file">Arraste seus arquivos aqui</h1>
+    <h1 data-translate="upload.drop_file_title">Arraste seus arquivos aqui</h1>
 </div>
 </body>
 </html>
