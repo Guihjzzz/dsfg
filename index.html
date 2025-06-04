@@ -4,14 +4,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title data-translate="app_name">HoloLab</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!-- ATENÇÃO: O conteúdo da meta description e keywords será definido pelos arquivos de tradução -->
-    <meta name="description" content="" data-translate="app_description_meta">
-    <meta name="keywords" content="" data-translate="app_keywords_meta">
+    <meta name="description" content="Ferramenta de construção para Minecraft Bedrock, similar a Litematica ou Schematica. Crie pacotes de recursos para MCBE para exibir hologramas de esquemáticos. Facilite a construção no MCPE!" data-translate="app_description_meta">
+    <meta name="keywords" content="hololab, litematica bedrock" data-translate="app_keywords_meta">
     
     <meta property="og:url" content="URL_DO_SEU_SITE_AQUI"> <!-- ATENÇÃO: Substitua pela URL real do HoloLab -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="HoloLab" data-translate="app_name_og">
-    <meta property="og:description" content="" data-translate="app_description_og"> <!-- Será preenchido pela tradução -->
+    <meta property="og:description" content="Ferramenta de construção para Minecraft Bedrock, similar a Litematica ou Schematica. Crie pacotes de recursos para MCBE para exibir hologramas de esquemáticos. Facilite a construção no MCPE!" data-translate="app_description_og">
     <meta property="og:image" content="https://github.com/Holo-Lab/holo/blob/main/1748951676116.png?raw=true">
     <meta property="og:image:width" content="720">
     <meta property="og:image:height" content="210">
@@ -24,11 +23,11 @@
         "@type":"WebApplication",
         "name":"HoloLab",
         "url":"URL_DO_SEU_SITE_AQUI", <!-- ATENÇÃO: Substitua -->
-        "description":"Descrição do HoloLab aqui, para ser traduzida via JS se necessário ou definida no JSON-LD",
+        "description":"Descrição do HoloLab aqui.", <!-- ATENÇÃO: Adapte esta descrição -->
         "applicationCategory":"UtilitiesApplication",
         "browserRequirements":"Requires JavaScript",
         "operatingSystem":"All",
-        "keywords":"hololab, minecraft, bedrock, schematics", <!-- Adapte as palavras-chave -->
+        "keywords":"hololab, minecraft, bedrock, schematics",
         "image":"https://github.com/Holo-Lab/holo/blob/main/ChatGPT%20Image%203%20de%20jun.%20de%202025,%2008_40_34.png?raw=true",
         "author":{ 
             "@type":"Person",
@@ -44,14 +43,13 @@
     }</script>
     <meta name="google-site-verification" content="SEU_CODIGO_GOOGLE_AQUI"> <!-- ATENÇÃO: Remova ou substitua -->
     
-    <link rel="manifest" href="manifest.webmanifest"> <!-- ATENÇÃO: Crie seu manifest.webmanifest -->
+    <link rel="manifest" href="manifest.webmanifest"> <!-- ATENÇÃO: Crie seu manifest.webmanifest e aponte para ele -->
     <link rel="icon" sizes="48x48" href="https://github.com/Holo-Lab/holo/blob/main/ChatGPT%20Image%203%20de%20jun.%20de%202025,%2008_40_34.png?raw=true">
     <link rel="icon" sizes="192x192" href="https://github.com/Holo-Lab/holo/blob/main/ChatGPT%20Image%203%20de%20jun.%20de%202025,%2008_40_34.png?raw=true">
     
-    <!-- Seus arquivos CSS -->
     <link rel="stylesheet" href="./code_files/css"> <!-- Fonte Catamaran -->
     <link rel="stylesheet" href="./code_files/MaterialSymbols.css">
-    <link rel="stylesheet" href="./code_files/index.css"> <!-- Este será o principal para o novo visual -->
+    <link rel="stylesheet" href="./code_files/index.css"> <!-- Seu CSS principal -->
     
     <script type="importmap">{"imports":{
         "nbtify":"https://esm.sh/nbtify@2.2.0?exports=read",
@@ -121,7 +119,6 @@
                 <input type="radio" checked="checked" name="configTabs" form="" id="settingsTab"> <label for="settingsTab" class="buttonlike" data-translate="settings.tab_heading">Configurações</label>
                 <fieldset>
                     <legend data-translate="settings.fieldset_legend">Configurações</legend>
-                    <!-- Restante das Configurações com data-translate -->
                     <label><span data-translate="settings.ghost_block_scale_label">Escala do bloco fantasma:</span> <input type="number" min="70" max="100" step="1" value="95" name="scale">%</label>
                     <fieldset class="expandable textureSettings">
                         <legend><label><span data-translate="settings.textures_legend">Texturas</span><input type="checkbox"></label></legend>
@@ -135,13 +132,17 @@
                             </div>
                             <div id="texturePreviewCont">
                                 <span data-translate="settings.textures_tint_toggleable_ingame">A tintura pode ser ligada/desligada no jogo</span>
-                                <div id="texturePreviewImageCont"></div>
+                                <div id="texturePreviewImageCont">
+                                    <!-- Imagens de preview de textura serão inseridas aqui pelo JS -->
+                                </div>
                             </div>
                         </div>
                     </fieldset>
                     <fieldset class="expandable">
-                        <legend><label><span data-translate="settings.player_controls_legend">Controles no Jogo (<a href="URL_WIKI_CONTROLES" target="_blank" data-translate="settings.player_controls_wiki_link_text">Wiki</a>)</span><input type="checkbox"></label></legend> <!-- ATENÇÃO: URL da sua Wiki -->
-                        <div id="playerControlsInputCont"></div>
+                        <legend><label><span data-translate="settings.player_controls_legend">Controles no Jogo (<a href="URL_WIKI_CONTROLES_AQUI" target="_blank" data-translate="settings.player_controls_wiki_link_text">Wiki</a>)</span><input type="checkbox"></label></legend> <!-- ATENÇÃO: URL da sua Wiki -->
+                        <div id="playerControlsInputCont">
+                            <!-- item-criteria-input para controles (gerados por JS) -->
+                        </div>
                     </fieldset>
                     <fieldset class="expandable">
                         <legend><label><span data-translate="settings.features_legend">Recursos</span><input type="checkbox"></label></legend>
@@ -167,7 +168,7 @@
                         <label><span data-translate="settings.opacity_mode_label">Modo de opacidade:</span> <select name="opacityMode"><option value="multiple" selected data-translate="settings.opacity_mode_ingame">Controles no jogo</option><option value="single" data-translate="settings.opacity_mode_fixed">Opção única</option></select></label> 
                         <label class="hidden"><span data-translate="settings.hologram_opacity_label">Opacidade do holograma:</span> <input type="number" min="10" max="100" step="5" value="80" name="opacity">%</label>
                     </details>
-                    <button type="button" class="resetButton" data-translate="settings.reset_button" data-reset-translation="settings.reset_button_confirm">Restaurar</button>
+                    <button type="button" class="resetButton" data-translate="settings.reset_button" data-reset-translation="settings.reset_button_confirm_text">Restaurar</button>
                 </fieldset>
                 <input type="radio" name="configTabs" form="" id="metadataTab"> <label for="metadataTab" class="buttonlike" data-translate="metadata.tab_heading">Metadados</label>
                 <fieldset>
@@ -178,26 +179,30 @@
                     <label><span data-translate="metadata.description_label">Descrição:</span><br><textarea rows="4" cols="20" name="description" data-translate-placeholder="metadata.description_placeholder" placeholder="Esta é minha casa épica!"></textarea></label>
                     <div id="descriptionLinksCont"></div>
                     <label><span data-translate="metadata.compression_label">Nível de compressão:</span> <input type="number" min="0" max="9" step="1" value="5" name="compressionLevel"></label> 
-                    <button type="button" class="resetButton" data-translate="metadata.reset_button" data-reset-translation="metadata.reset_button_confirm">Restaurar</button>
+                    <button type="button" class="resetButton" data-translate="metadata.reset_button" data-reset-translation="metadata.reset_button_confirm_text">Restaurar</button>
                 </fieldset>
                 <input type="radio" name="configTabs" form="" id="resourcesTab"> <label for="resourcesTab" class="buttonlike" data-translate="resources.tab_heading">Pacotes de Recursos</label>
                 <fieldset>
                     <legend data-translate="resources.fieldset_legend">Pacotes de Recursos</legend>
                     <label><span data-translate="resources.upload_local_label">Fazer upload de um pacote de recursos local:</span><br><input type="file" webkitdirectory="" name="localResourcePack"></label> 
-                    <button type="button" id="clearResourcePackCacheButton" data-translate="resources.clear_cache_button" data-reset-translation="resources.cache_reset_confirm">Limpar cache</button> 
-                    <button type="button" class="resetButton" data-translate="resources.reset_button" data-reset-translation="resources.reset_button_confirm">Restaurar</button>
+                    <button type="button" id="clearResourcePackCacheButton" data-translate="resources.clear_cache_button" data-reset-translation="resources.cache_reset_confirm_text">Limpar cache</button> 
+                    <button type="button" class="resetButton" data-translate="resources.reset_button" data-reset-translation="resources.reset_button_confirm_text">Restaurar</button>
                 </fieldset>
             </div>
             <button name="submit" id="generatePackButton" data-translate="generate_pack_button">Gerar Pacote</button> 
-            <small id="termsOfUseNotice" data-translate="terms_of_use_notice">Ao gerar um pacote com HoloLab, você concorda com os <a href="URL_DOS_SEUS_TERMOS_DE_USO" target="_blank" data-translate="terms_of_use_link_text">Termos de Uso</a>. (É bem curto!)</small> <!-- ATENÇÃO: URL dos seus Termos -->
+            <small id="termsOfUseNotice" data-translate="terms_of_use_notice">Ao gerar um pacote com HoloLab, você concorda com os <a href="URL_DOS_SEUS_TERMOS_DE_USO_AQUI" target="_blank" data-translate="terms_of_use_link_text">Termos de Uso</a>. (É bem curto!)</small> <!-- ATENÇÃO: URL dos seus Termos -->
         </fieldset>
     </form>
     <div id="completedPacksCont"></div>
-    <simple-logger id="log"></simple-logger>
+    <simple-logger id="log">
+        <!-- Template do simple-logger (interno) -->
+    </simple-logger>
     </div>
     <div id="languageSelectorCont" title="Mudar idioma" data-translate-title="language_selector_title">
         <div id="languageSelectorButton"></div>
-        <select id="languageSelector"></select>
+        <select id="languageSelector">
+            <!-- Opções de idioma serão inseridas aqui pelo JS com base em translations/languages.json -->
+        </select>
     </div>
 </main>
 <div id="dropFileNotice" class="hidden">
